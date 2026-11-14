@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leetforge"
+version = "0.1.0"
+description = "LeetCode practice toolkit: multi-approach solutions, isolated test runner, differential fuzzing, empirical complexity analysis, spaced repetition and a practice coach"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+leetforge = "leetforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["leetforge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

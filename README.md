@@ -19,7 +19,7 @@ Pure Python standard library - **zero runtime dependencies**.
 ## Quick start
 
 ```bash
-git clone <your-repo-url> && cd leetforge
+git clone https://github.com/babitha0305/leetforge.git && cd leetforge
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
